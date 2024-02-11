@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/tst")
-@CrossOrigin
+//@CrossOrigin
 @Slf4j
 public class QueryController {
 //    @Autowired

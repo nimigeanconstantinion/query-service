@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1/query")
-@CrossOrigin
+//@CrossOrigin
 @Slf4j
 public class TestController {
 
