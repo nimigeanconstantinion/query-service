@@ -1,4 +1,4 @@
-name: CD - Deploy Command-service API
+name: CD - Deploy Query-service API
 
 on:
   push:
