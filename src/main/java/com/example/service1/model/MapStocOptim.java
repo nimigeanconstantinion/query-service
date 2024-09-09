@@ -39,4 +39,9 @@ public class MapStocOptim {
 
     @Column(name = "nrZile")
     private int nr_zile;
+
+    public String toString(){
+        return "id="+this.id+";"+"denumire="+this.articol+";"+"categorie="+this.categorie+";"+"furnizoe="+this.furniz+
+                ";"+"nr_zile="+this.nr_zile;
+    }
 }
