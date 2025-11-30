@@ -28,20 +28,20 @@ public class TestController {
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("")
     public ResponseEntity<List<MapStocOptim>> getAll(HttpServletRequest request){
-        String authorizationHeader = request.getHeader("Authorization");
+//        String authorizationHeader = request.getHeader("Authorization");
 
         String jwtToken = null;
 
         // Verificăm dacă header-ul Authorization este prezent și începe cu "Bearer "
-        if (authorizationHeader != null) {
-            log.info("Sunt in");
-            // Extragem tokenul JWT eliminând prefixul "Bearer "
-            jwtToken = authorizationHeader;
-        }
+//        if (authorizationHeader != null) {
+//            log.info("Sunt in");
+//            // Extragem tokenul JWT eliminând prefixul "Bearer "
+//            jwtToken = authorizationHeader;
+//        }
 
         // Aici poți folosi jwtToken pentru a valida utilizatorul sau pentru alte operațiuni
-        System.out.println("====JWT Token: " );
-        log.info("-TOKEN "+jwtToken);
+//        System.out.println("====JWT Token: " );
+//        log.info("-TOKEN "+jwtToken);
         List<MapStocOptim> lista=mapStocOptService.getAllMapStocOpt();
         log.info("Am primit rezultat din getAll",lista.stream().map(m->m.getArticol()).collect(Collectors.toList()));
         
